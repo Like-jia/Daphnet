@@ -1,0 +1,7 @@
+# OxIOD Dataset files (large binary data, do not commit)
+*.zip
+*.csv
+*.tar.gz
+
+# Keep the README and directory structure
+!README.md
