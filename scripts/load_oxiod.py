@@ -298,7 +298,7 @@ def extract_windows(data, window_size=128, stride=64):
     windows = []
     center_positions = []
 
-    for start in range(0, n_samples - window_size, stride):
+    for start in range(0, n_samples - window_size + 1, stride):
         end = start + window_size
         windows.append(imu_combined[start:end])
         center_positions.append(pos[start + window_size // 2])
